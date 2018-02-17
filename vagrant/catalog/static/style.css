@@ -1,0 +1,174 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
+.title {
+	font-family: "Poppins";
+	font-size: 50px;
+	line-height: .25em;
+	padding-top: 50px;
+	align-content: center;
+	text-align: center;
+}
+
+.idea_title {
+	font-family: "Poppins";
+	font-size: 30px;
+	line-height: 1.5em;
+	align-content: center;
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.comment_text {
+	font-family: "Poppins";
+	font-size: 15px;
+	line-height: 1.1em;
+	padding-top: 10px;
+}
+
+.description_text {
+	font-family: "Poppins";
+	font-size: 20px;
+	line-height: 1.5em;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.comment {
+	padding-left: 25%;
+	padding-right: 20%;
+	margin: auto;
+}
+
+hr {
+	border: none;
+	color: #333;
+	background-color: #333;
+}
+
+hr.header {
+	width: 80%;
+	height: 7px;
+}
+
+/*TAB STYLING, CODE LARGELY FROM W3 SCHOOLS @https://www.w3schools.com/howto/howto_js_tabs.asp*/
+
+.tab {
+    overflow: hidden;
+    margin: auto;
+    width: 50%;
+    align-content: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width: 30%;
+    margin: 1.3%;
+    background-color: #ffffff;
+    font-family: 'Poppins';
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #473287;
+    color: #ffffff;
+    border-color: black;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/*LOGIN PAGE STYLE*/
+
+.loginButton {
+	overflow: hidden;
+    margin: auto;
+    align-content: center;
+    width: 115px;
+}
+
+.center {
+	align-content: center;
+	text-align: center;
+}
+
+.login_title {
+	font-family: "Poppins";
+	font-size: 30px;
+	line-height: 1.5em;
+	align-content: center;
+}
+
+.logo-container {
+	width: 115px;
+	height: relative;
+	margin: auto;
+	align-content: center;
+	overflow: hidden;
+}
+
+.space-top {
+	padding-top: 20%;
+}
+
+
+/* STYLE FOR EDITING PAGES */
+
+.form-container {
+	overflow: hidden;
+    margin: auto;
+    align-content: center;
+    width: 400px;
+    padding-top: 20%;
+}
+
+.function-title {
+	font-family: "Poppins";
+	font-size: 30px;
+	line-height: 1.5em;
+	align-content: center;
+	text-align: center;
+}
+
+.form {
+	width: 300px;
+	height: 15px;
+	font-family: "Poppins";
+	border-color: black;
+}
+
+.poppins-small {
+	font-family: "Poppins";
+	font-size: 20px;
+	line-height: 1em;
+}
+
+.hover:hover {
+	cursor: pointer;
+	font-size: 40px;
+}
+
+.hover2:hover {
+	cursor: pointer;
+	font-size: 20px;
+}

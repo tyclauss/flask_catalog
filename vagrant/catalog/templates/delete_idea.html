@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Idea</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="form-container">
+	<h1 class="function-title">Deleting Idea</h1>
+	<p class="poppins-small">{{idea.people.name}} - {{idea.description}}</p><p class="poppins-small"><strong>- ARE YOU SURE YOU WANT TO DELETE THIS?</strong></p>
+	<form method="POST" class="">
+		<input type="submit" placehlder="Yes" value="Yes" name="Yes" class="poppins-small">
+	</form>
+	<form>
+		<input type="submit" value="No" onclick="window.open('http://0.0.0.0.xip.io:5000/all_ideas')">
+	</form>
+</div>
+</body>
+</html>

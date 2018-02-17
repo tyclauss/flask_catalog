@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Idea</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="form-container">
+	<h1 class="function-title">Editing Idea</h1>
+	<p class="poppins-small">{{idea.title}}</p>
+	<p class="poppins-small">{{idea.people.name}} - {{idea.description}}</p>
+	<form method="POST" class="">
+		<input name="text" class="form" placeholder="Insert a new description here...">
+		<input type="submit" class="poppins-small">
+	</form>
+</div>
+</body>
+</html>

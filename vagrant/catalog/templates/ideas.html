@@ -1,0 +1,51 @@
+<html>
+<head><link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"></head>
+<body>
+
+<h1 class="title">Vantage Product Feature Backlog</h1>
+<hr class="header">
+
+<div class="tab">
+
+	<button class="tablinks" onclick="window.open('http://0.0.0.0.xip.io:5000/all_ideas','_self')">All Ideas</button>
+
+{% for p in people %}
+
+  	<button class="tablinks" onclick="window.open('http://0.0.0.0.xip.io:5000/ideas/' + {{p.id}},'_self' )">{{p.email}}</button>
+
+{% endfor %}
+
+	<button class="tablinks" onclick="window.open('http://0.0.0.0.xip.io:5000/new_idea/' + {{person_id}},'_self')">New Idea</button>
+
+	<button class="tablinks" onclick="window.open('http://0.0.0.0.xip.io:5000/gdisconnect','_self')">Log Off</button>
+
+</div>
+
+{% for i in ideas %}
+
+<h2 class="idea_title">{{i.title}} - {{i.people.email}} - <a class="hover" onclick="window.open('http://0.0.0.0.xip.io:5000/idea/' + {{i.id}} + '/edit')">Edit</a> - <a class="hover" onclick="window.open('http://0.0.0.0.xip.io:5000/idea/' + {{i.id}} + '/delete')">Delete</a></h2>
+
+		<p class="description_text">{{i.description}}</p>
+
+	{% for c in comments %}
+		{% if i.id==c.idea_id %}
+			<div class="comment">
+					<p class="comment_text"><strong>{{c.people.email}}</strong> - <a class="hover2" onclick="window.open('http://0.0.0.0.xip.io:5000/comment/' + {{c.id}} + '/edit')">Edit</a> <a class="hover2" onclick="window.open('http://0.0.0.0.xip.io:5000/comment/' + {{c.id}} + '/delete')">- Delete - </a>{{c.text}}</p>
+			</div>
+
+		{% endif %}
+
+	{% endfor %}
+
+	<div class="comment">
+		<form method="POST" class="">
+			<input name="text" class="form">
+			<input name="id" type="hidden" value="{{i.id}}">
+			<input type="submit" class="poppins-small">
+
+		</form>
+	</div>
+
+{% endfor %}
+
+</body>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Comment</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="form-container">
+	<h1 class="function-title">Editing Comment</h1>
+	<p class="poppins-small">{{comment.people.name}} - {{comment.text}}</p>
+	<form method="POST" class="">
+		<input name="text" class="form">
+		<input type="submit" class="poppins-small">
+	</form>
+</div>
+</body>
+</html>
